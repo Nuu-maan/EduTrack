@@ -30,11 +30,11 @@ Quick links: [Getting Started](#-quick-start) · [Development](#-development-set
 ```mermaid
 flowchart LR
   subgraph Client[Web Client]
-    UI[Next.js 14 App Router\nTailwind + shadcn/ui\nRecharts]
+    UI[Next.js 14 App Router Tailwind + shadcn/ui Recharts]
   end
 
   subgraph Server[Backend API]
-    API[FastAPI\nRouters: auth, students, attendance, marks, reports]
+    API[FastAPIRouters: auth, students, attendance, marks, reports]
     DB[(SQLite/PostgreSQL)]
   end
 
