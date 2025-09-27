@@ -11,7 +11,7 @@ EduTrack is a full‑stack app for schools to track attendance, marks, and gener
 
 • Backend: `backend/` (FastAPI + SQLAlchemy + JWT)
 
-Quick links: [Getting Started](#-quick-start) · [Development](#-development-setup) · [Project Structure](#-project-structure) · [API](#-api-endpoints) · [Screenshots](#-screenshots) · [License](#-license)
+Quick links: [Getting Started](#-quick-start) · [Development](#-development-setup) · [Project Structure](#-project-structure) · [API](#-api-endpoints)  · [License](#-license)
 
 ## Table of contents
 
@@ -22,8 +22,7 @@ Quick links: [Getting Started](#-quick-start) · [Development](#-development-set
 5. Development Setup (Backend/Frontend)
 6. Environment Variables
 7. API Endpoints
-8. Screenshots
-9. Contributing and License
+8. Contributing and License
 
 ## 🏗️ Architecture
 
@@ -34,7 +33,7 @@ flowchart LR
   end
 
   subgraph Server[Backend API]
-    API[FastAPIRouters: auth, students, attendance, marks, reports]
+    API[FastAPI Routers: auth, students, attendance, marks, reports]
     DB[(SQLite/PostgreSQL)]
   end
 
@@ -317,15 +316,6 @@ Frontend `.env.local` example
 ```
 NEXT_PUBLIC_API_URL=http://localhost:8000
 ```
-
-## 📸 Screenshots
-
-Add screenshots or GIFs here for a great first impression.
-
-- Dashboard (light/dark)
-- Students list + detail/compare
-- Attendance heatmap
-- Reports and charts
 
 ## 🤝 Contributing
 
