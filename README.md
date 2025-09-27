@@ -35,11 +35,12 @@ flowchart LR
 
   subgraph Server[Backend API]
     API[FastAPI\nRouters: auth, students, attendance, marks, reports]
-    DB[(SQLite / PostgreSQL)]
+    DB[(SQLite/PostgreSQL)]
   end
 
-  UI <--> |Axios (REST JSON)| API
-  API <--> DB
+  UI <-->|Axios REST| API
+  API --> DB
+  DB --> API
 ```
 
 ## 🚀 Features
